@@ -76,7 +76,7 @@ MVC 模式（MVC Pattern）
 - CSDN：   [请叫我大师兄][CSDN]
 
 ## Copyright and License
-**The MIT License (MIT)**
+**Apache License**
 
 
 [Email]:mailto:cmshome@163.com "我的邮箱"

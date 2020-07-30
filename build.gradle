@@ -1,0 +1,38 @@
+group 'com.lxk.note'
+version '1.0-SNAPSHOT'
+
+
+apply plugin: 'java'
+apply plugin: 'maven'
+sourceCompatibility = 1.8
+
+    apply plugin: 'idea'
+
+    tasks.withType(JavaCompile){
+        options.encoding = "UTF-8"
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+ext {
+    vertxVersion = '3.3.2'
+    guavaVersion = '23.0'
+    lombokVersion = '1.18.8'
+    junitVersion = '4.12'
+    log4jVersion = '2.8.2'
+    fastjsonVersion = '1.2.58'
+}
+
+dependencies {
+    compile group: 'cglib', name: 'cglib-nodep', version: '2.2'
+    compile group: 'com.google.guava', name: 'guava', version: "${guavaVersion}"
+    compile group: 'org.projectlombok', name: 'lombok', version: "${lombokVersion}"
+    compile group: 'com.alibaba', name: 'fastjson', version: "${fastjsonVersion}"
+    compile group: 'junit', name: 'junit', version: "${junitVersion}"
+}
+
+
+
